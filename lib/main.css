@@ -1,0 +1,860 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Russo One', sans-serif;
+  line-height: 1.4;
+  font-size: 18px;
+  color: #fff;  
+  position: relative;
+  width: 100%;  
+  background: url('../img/bg.jpg') repeat;    
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+p, h1, h2, h3, h4, h5, span {
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  font-weight: normal;
+} 
+
+input, button {
+  font-family: 'Russo One', sans-serif;
+}
+
+input:focus, button:focus, a:focus {
+  outline: unset;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+h1 {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  width: 1100px;    
+  margin: 0 auto;
+  display: block;
+  position: relative;  
+  min-height: 100vh;
+}
+
+.market {
+  padding-left: 100px;
+}
+
+nav {
+  font-size: 34px;  
+  font-weight: light;
+  position: absolute;
+  top: 600px;
+  left: -135px;
+  transform: translateY(-70%);  
+}
+
+nav li {
+  margin-bottom: 15px;  
+}
+
+nav li:last-child {
+  margin-bottom: 0;
+}
+
+.logo {
+  margin: 30px 0 200px 0;
+  text-align: center;
+}
+
+.logo img {
+  width: 300px;
+}
+
+/* вкладка машины */
+  #garage {
+    width: 100%;  
+  }
+
+  #garage .item {
+    width: 550px;
+    margin: 0 225px 0 325px;
+    font-weight: 300;
+    position: relative;
+  }
+
+  #garage .item h1 {
+    margin-top: 20px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 40px;
+  }
+
+  .common:after {
+    content: 'common';
+    color: #a7a7a7;
+    position: absolute;
+    top: 38px;    
+    left: 50%;  
+    transform: translateX(-50%);
+    font-size: 16px;
+  }
+
+  .rare:after {
+    content: 'rare';
+    color: #6565ff;
+    position: absolute;
+    top: 38px;    
+    left: 50%;  
+    transform: translateX(-50%);
+    font-size: 16px;
+  }
+
+  .epic:after {
+    content: 'epic';
+    color: #cc6dfb;
+    position: absolute;
+    top: 38px;    
+    left: 50%;  
+    transform: translateX(-50%);
+    font-size: 16px;
+  }
+
+  .legendary:after {
+    content: 'legendary';
+    color: orange;
+    position: absolute;
+    top: 38px;    
+    left: 50%;  
+    transform: translateX(-50%);
+    font-size: 16px;
+  }
+
+  .stats {    
+    position: relative;  
+    font-size: 18px;
+    width: 120px;
+    margin-top: 50px;
+  }
+
+  .stats span {
+    display: block;    
+    margin-bottom: 15px;
+  }
+
+  .stats span:last-child {
+    margin-bottom: 0;
+  }
+
+  #garage .value {
+    display: inline-block;
+    color: #f9e58e;  
+  }
+
+  #garage .speed {
+    font-size: 20px;  
+  }
+
+  .history, .stats {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .visual {
+    width: 100%;
+  }
+  .visual img {
+    height: 255px;
+    width: auto !important;
+  }
+
+  .stats button {
+    display: block;
+    border: none;
+    background: #f9e58e;
+    font-size: 18px;
+    border-radius: 2px;
+    width: 120px;
+    height: 35px;
+    box-shadow: 1px 1px 3px #f9e58e;
+    margin-top: 10px;
+  }
+
+  .buttons {
+    text-align: center;
+  }
+
+  .buttons a {
+    border-bottom: 1px solid #fff;
+  }
+
+  .history {
+    width: 420px;  
+  }
+
+  .history h3 {
+    text-align: right;
+    margin-right: 100px;
+    font-size: 25px;
+  }
+
+  .owl-theme .owl-nav {
+    margin-top: 10px;
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+    position: absolute;
+    top: 125px;  
+    width: 100%;
+  }    
+
+  .owl-prev {
+    left: 255px;
+    position: absolute;
+  }
+
+  .owl-next {
+    right: 155px;
+    position: absolute;
+  }
+
+  .owl-prev span, .owl-next span {
+    font-size: 60px;
+  }
+
+  .owl-prev:hover , .owl-next:hover {
+    background: transparent !important;
+  }
+
+  .data_history {
+    width: 100%;
+    margin-left: 75px;
+    margin-top: 20px;
+  }
+
+  .data_history img {
+    width: 70px !important;
+    display: inline !important;
+  }
+
+  .data_history li {
+    background: rgba(255,255,255,.6);
+    padding: 7px 0;
+  }
+
+  .data_history span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 32%;
+    margin: unset;
+    text-align: center;
+  }
+
+  .wrapp_history {
+    margin-top: 10px;
+  }
+
+  .wrapp_history li {
+    margin-bottom: 5px;
+  }
+
+  .wrapp_history li:last-child {
+    margin-bottom: 0;
+  }
+
+  .data_history .wrapp_history .more_info {
+    width: 34px !important;
+    opacity: .5;
+  }
+
+  .win {
+    color: green;
+  }
+
+  .loose {
+    color: red;
+  }
+
+  .draw {
+    color: blue;
+  }
+
+  #garage .owner {
+    display: block !important;
+    font-size: 14px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+/* вкладка машины */
+
+/*темплейт машины*/
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  } 
+  
+  .car .race {
+    background: red !important;
+    box-shadow: 1px 1px 3px red !important;
+    color: #fff !important;
+  }
+
+  .unknow:after {
+    content: 'unknow';
+    color: #a7a7a7;
+    position: absolute;
+    top: 38px;    
+    left: 50%;  
+    transform: translateX(-50%);
+    font-size: 16px;
+  }
+
+  .car {
+    float: left;
+    width: 27.3%;        
+    margin-right: 3%;
+    margin-bottom: 3%;
+    position: relative;
+    background: rgba(134,151,145,.4);
+    border-radius: 2px;
+  }
+
+  .car:nth-child(3n+1) {
+    margin-left: 6%;
+  }
+
+  .car:nth-child(3n+3) {
+    margin-right: 6%;
+  }
+
+  .car .visual_wrap {
+    text-align: center;
+  }
+
+  .car .visual_wrap img {
+    height: 120px;
+    display: inline-block;    
+    margin-top: 20px;
+  }
+
+  .car h2 {
+    text-align: center;
+    position: relative;
+  }
+
+  .car h2:after {
+    top: 26px;    
+    font-size: 12px;
+  }
+
+  .car .stats_car span {
+    display: inline-block;
+    font-size: 14px;    
+    text-align: center;    
+  }
+
+  .speed, .lucky, .handling, .reliability {
+    width: 40%;
+  }
+
+  .car .stats_car .value {
+    display: inline-block
+  }
+
+  .car .stats_car {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    padding: 1px 0;
+    border-top: 1px solid #f4e38e;
+    border-bottom: 1px solid #f4e38e;
+    text-align: center;
+  }
+
+  #packs .car .stats_car {
+    width: 96%;
+    margin-left: 2%;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    padding: 1px 0;
+    border-top: 1px solid #f4e38e;
+    border-bottom: 1px solid #f4e38e;
+    text-align: center;
+  }
+
+  #packs .speed,#packs .lucky,#packs  .handling,#packs  .reliability {
+    width: 48%;
+  }
+
+  .car .value {
+    color: #f9e58e;
+  }
+
+  .car .sell, .car .buy, .car .race {
+    display: block;
+    border: none;
+    background: #f9e58e;
+    font-size: 18px;
+    border-radius: 2px;
+    width: 120px;
+    height: 35px;
+    box-shadow: 1px 1px 3px #f9e58e;    
+    margin: 10px auto 0 auto;
+    cursor: pointer;
+  }
+
+  .car .owner {
+    width: 90%;
+    display: block;
+    margin: 10px auto 0 auto;
+    overflow: hidden;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .car {
+    padding-bottom: 17px;
+  }
+
+  .car .win {
+    color: #31f131;
+  }
+
+  .car .result {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+/*темплейт машины*/
+
+/*страница гонки*/
+  .race .car {
+    width: 27.3%;    
+  }
+
+  .race .car:first-child {
+    margin-left: 13.5%;
+    margin-right: 0;
+  }
+
+  .race .car:last-child {
+    margin-left: 18.4%;
+    margin-right: 0;
+  }
+
+  .race_fight .race {
+    position: relative;
+    padding-left: 100px;
+  }
+
+  .race .vs {
+    font-size: 60px;
+    position: absolute;
+    top: 400px;    
+    padding-left: 1100px;
+    transform: translateX(-50%);
+  }
+
+  .time_race {
+    width: 210px;
+    display: block;
+    margin: 10px auto;
+  }
+/*страница гонки*/
+
+/*паки*/
+  #packs h1, #packs h3 {
+    text-align: center;    
+  }
+  #packs h1 {
+    margin-bottom: 10px;
+  }
+  
+  #packs {
+    padding-left: 100px;
+  }
+
+  #packs h3 {
+    margin-bottom: 60px;    
+  }
+
+  .buy_packs .pay, .buy_packs .free {
+    display: inline-block;
+    border: none;
+    background: #f9e58e;
+    font-size: 18px;
+    border-radius: 2px;
+    width: 120px;
+    height: 35px;
+    box-shadow: 1px 1px 3px #f9e58e;
+    margin-top: 10px;    
+    position: relative;
+    cursor: pointer;
+  }
+  .buy_packs .pay {
+    margin-right: 180px;
+    margin-left: 140px;
+  }
+  
+  .scnd_pack {
+    margin-right: 175px;
+  }
+
+  .buy_packs .pay:after {
+    content: 'Only for 0.01 NAS';
+    position: absolute;
+    font-size: 12px;
+    color: #f9e58e;
+    top: 45px;
+    width: 150px;
+    left: -15px;
+  }
+
+  .buy_packs .free:after {
+    content: 'Only 2 for each account';
+    position: absolute;
+    font-size: 12px;
+    color: #f9e58e;
+    top: 45px;
+    width: 150px;
+    left: -15px;
+  }
+/*паки*/
+
+/*конгратц*/
+  #congrat h1 {
+   margin-bottom: 40px;
+  }
+  #congrat {
+    padding-left: 100px;
+  }
+/*конгратц*/
+
+/*страница игрока*/
+  .player_info {
+    background: rgba(134,151,145,.4);
+    width: 350px;
+    position: relative;
+    padding: 20px;
+    margin-top: 40px;
+  }
+  .player_info .adress, .player_info .exp {
+    font-size: 14px;
+  }
+
+  #player {
+    padding-left: 100px;
+  }
+
+  .player_info .value {
+    color: #f4e38e;    
+  }
+
+  .player_info .edit {
+    display: inline-block;
+    width: 18px;
+    margin-left: 15px;
+    cursor: pointer;
+  }
+
+  .player_info .name {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .player_info .adress, .player_info .exp {
+    display: block;
+  }
+
+  .player_info .lvl {
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .player_info .exp {
+    margin: 10px 0;
+  }
+
+  .player_info .lvl .value {
+    font-size: 30px;
+  }
+
+  .player_info, .player_history {
+    display: inline-block;
+    vertical-align: top;
+  }
+  #player .player_history {
+    width: 640px;
+  }
+
+  .player_history h2 {
+    text-align: center;
+    margin-left: 75px;
+  }
+  #player_info .data_history {
+    width: unset;
+  } 
+
+  .achieve {
+    margin-top: 60px;
+    width: 100%;
+  }
+
+  .achieve h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .item_ach {
+    margin: 10px 0;
+    padding: 15px;    
+    width: 320px;
+    margin-right: 10px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 2px;
+  }
+
+  .item_ach:nth-child(3n+3) {
+    margin-right: 0;
+  }
+
+  .blue {
+    background: rgba(0,112,255,.7);
+  }
+
+  .red {
+    background: rgba(249,122,122,.8); 
+  }
+
+  .item_ach p {
+    font-size: 14px;
+    margin: 10px 0;
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+    padding: 5px;
+    width: 90%;
+    margin-left: 5%;
+    text-align: left;
+  }
+
+  .item_ach .res {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    border-bottom: unset;
+    border-top: unset;
+  }
+
+  .item_ach .value {
+    border-bottom: 1px solid #fff;
+    color: #f9e58e;
+    font-size: 20px;
+  }
+
+  .cars_h1 {
+    margin: 70px 0 50px 0;
+    text-align: center;
+  }
+
+  #achieve .row {
+    padding-left: 175px;
+  }
+/*страница игрока*/
+
+/*ранкед*/
+  #ranked {
+    padding-left: 115px;
+  }
+  #ranked .player_info {
+    width: 300px;
+    margin-right: 35px;
+  }
+  #ranked .player_info:nth-child(3n+3) {
+    margin-right: 0;
+  }
+  #ranked .player_info .adress .value {
+    font-size: 12px;
+  }
+/*ранкед*/
+
+/*ачивки*/
+  #achieve {
+    padding-left: 100px;
+  }
+/*ачивки*/
+
+/*гонки*/
+  #race {
+    padding-left: 100px;
+  }
+/*гонки*/
+
+/*нет машин*/
+  .packs_btn, .market_btn {    
+    border: none;
+    background: #f9e58e;
+    font-size: 18px;
+    border-radius: 2px;
+    width: 120px;
+    height: 35px;
+    box-shadow: 1px 1px 3px #f9e58e;
+    margin-top: 10px;
+    display: inline-block;    
+    cursor: pointer;
+  }
+
+  .market_btn {
+    margin-right: 30px;
+  }
+
+  .no_cars {
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .no_cars h2 {
+    margin: 40px 0;    
+    line-height: 1.3;
+  }
+/*нет машин*/
+
+/*err_result*/
+  .err_result {
+    margin-top: 70px;
+  }
+/*err_result*/
+
+/*фиксы на падинг лефт*/
+  #my_cars {
+    padding-left: 100px;
+  }
+/*фиксы на падинг лефт*/
+
+/*ансейл*/
+  .unsell {
+    background: rgba(255,96,96,.7) !important;
+    color: #fff !important;
+    box-shadow: 1px 1px 3px rgba(255,96,96,.7) !important;
+  }
+/*ансейл*/
+
+/*price*/
+  .price {
+    display: block;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: -10px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #f9d471;
+    color: #000;
+    padding: 3px 4px;
+    border-radius: 2px;
+  }
+/*price*/
+
+/*user info*/
+  .user_info {
+    background: rgba(134,151,145,.4);
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    left: -135px;
+    padding: 10px 20px;
+    border-radius: 2px;
+  }    
+
+  .user_info .value {
+    color: #f9e58e;
+    font-size: 20px; 
+  }
+
+  .user_info h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .user_info .lvl {
+    margin-bottom: 5px;
+    display: block;
+  }
+/*user info*/
+
+/*popup*/
+  #sell, #error_info, #transaction, #about, #my_cars_popup {
+    position: relative;
+    width: 1100px;
+    margin: 0 auto;
+    display: block;
+    background: url('../img/bg.jpg') repeat;    
+    padding: 40px;
+  }
+  #sell button, #error_info button, #transaction button, #about button, #my_cars_popup button {
+    display: block;
+    border: none;
+    background: #f9e58e;
+    font-size: 18px;
+    border-radius: 2px;
+    width: 120px;
+    height: 35px;
+    box-shadow: 1px 1px 3px #f9e58e;    
+    margin: 10px auto;
+  }
+
+  #sell .mfp-close, #error_info .mfp-close, #transaction .mfp-close, #about .mfp-close, #my_cars_popup .mfp-close {
+    background: transparent;
+    box-shadow: unset;
+    color: #fff;
+  }
+
+  #sell input, #error_info input, #transaction input, #about input, #my_cars_popup input {
+    width: 120px;
+    display: block;
+    margin: 10px auto;
+    height: 30px;
+    border: none;
+    font-size: 20px;
+    background: rgba(255,255,255,.8);
+  }
+
+  #sell h1, #error_info h1, #transaction h1, #about h1, #my_cars_popup h1 {
+    margin-bottom: 30px;
+  }
+
+  .nas {
+    position: absolute;
+    top: 110px;
+    left: 57%;   
+    font-size: 30px;
+  }
+
+  .status_trans, .hash {
+    display: inline-block;
+  }
+/*popup*/
+
