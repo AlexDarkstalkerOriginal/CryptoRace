@@ -120,7 +120,7 @@ nav li:last-child {
 
   .rare:after {
     content: 'rare';
-    color: #6565ff;
+    color: #8a8aff;
     position: absolute;
     top: 38px;    
     left: 50%;  
@@ -699,16 +699,65 @@ nav li:last-child {
   }
 /*ранкед*/
 
-/*ачивки*/
+/*ачивки, adds*/
   #achieve {
     padding-left: 100px;
   }
-/*ачивки*/
+
+  #adds .speed, #adds .lucky {
+    width: 45%;
+  }
+
+  #adds .stats_car {
+    padding-left: 5%;
+  }
+
+  #achieve .car p, #adds .car p {
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: justify;
+    padding: 5px;
+  }  
+
+  #achieve .car .visual_wrap img, #adds .car .visual_wrap img {
+    height: 140px;
+  }
+
+  #achieve .car {
+    width: 30.3% ;
+  }
+
+  #achieve .car .stats_car, #adds .car .stats_car {
+    margin-top: 20px;
+  }
+
+  #achieve .counter, #adds .counter {
+    font-size: 16px;
+    width: 200px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  #achieve .counter .value, #adds .counter .value {
+    font-size: 20px;
+  }
+
+  #adds .items_adds .car:nth-child(3n+1) {
+    margin-left: 19.7%;
+  }
+
+  #adds .picked {
+    background: grey;
+    box-shadow: 1px 1px 3px grey;
+    color: #fff;
+  }
+/*ачивки, adds*/
 
 /*гонки*/
   #race {
     padding-left: 100px;
   }
+
 /*гонки*/
 
 /*нет машин*/
@@ -774,6 +823,7 @@ nav li:last-child {
     color: #000;
     padding: 3px 4px;
     border-radius: 2px;
+    text-align: center;
   }
 /*price*/
 
@@ -806,7 +856,7 @@ nav li:last-child {
 /*user info*/
 
 /*popup*/
-  #sell, #error_info, #transaction, #about, #my_cars_popup {
+  #sell, #error_info, #transaction, #about, #my_cars_popup, #adds {
     position: relative;
     width: 1100px;
     margin: 0 auto;
@@ -814,9 +864,10 @@ nav li:last-child {
     background: url('../img/bg.jpg') repeat;    
     padding: 40px;
   }
-  #sell button, #error_info button, #transaction button, #about button, #my_cars_popup button {
+  #sell button, #error_info button, #transaction button, #about button, #my_cars_popup button, .pick, #adds .send {
     display: block;
     border: none;
+    cursor: pointer;
     background: #f9e58e;
     font-size: 18px;
     border-radius: 2px;
@@ -824,9 +875,10 @@ nav li:last-child {
     height: 35px;
     box-shadow: 1px 1px 3px #f9e58e;    
     margin: 10px auto;
+    text-align: center;
   }
 
-  #sell .mfp-close, #error_info .mfp-close, #transaction .mfp-close, #about .mfp-close, #my_cars_popup .mfp-close {
+  #sell .mfp-close, #error_info .mfp-close, #transaction .mfp-close, #about .mfp-close, #my_cars_popup .mfp-close, #adds .mfp-close {
     background: transparent;
     box-shadow: unset;
     color: #fff;
@@ -842,7 +894,7 @@ nav li:last-child {
     background: rgba(255,255,255,.8);
   }
 
-  #sell h1, #error_info h1, #transaction h1, #about h1, #my_cars_popup h1 {
+  #sell h1, #error_info h1, #transaction h1, #about h1, #my_cars_popup h1, #adds h1 {
     margin-bottom: 30px;
   }
 
@@ -855,6 +907,17 @@ nav li:last-child {
 
   .status_trans, .hash {
     display: inline-block;
+  }
+
+  .send {
+    color: #000;    
+    padding-top: 5px;
+  }
+
+  .disabled {
+    opacity: 0.2;
+    background: #f9e58e;
+    box-shadow: 1px 1px 3px #f9e58e;    
   }
 /*popup*/
 

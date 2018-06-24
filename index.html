@@ -35,7 +35,7 @@
 			</nav>
 			
 			<div class="logo">
-				<img src="img/logo.png" alt="" class="">					
+				<a href="#adds" class="popup"><img src="img/logo.png" alt="" class=""></a>
 			</div>
 
 			<div v-show="no_cars" class="no_cars">
@@ -163,7 +163,7 @@
 						</div>					
 						<h2 class="unknow">Unknow</h2>					
 						<div class="stats_car">
-							<span class="speed"><span class="value">180-280</span> km/h</span>							
+							<span class="speed"><span class="value">180-280</span> km/h</span>				
 							<span class="lucky">lucky: <span class="value">0-22</span></span>
 							<span class="reliability">robust: <span class="value">8%-10%</span></span>
 							<span class="handling">handling: <span class="value">15-50</span></span>
@@ -262,17 +262,33 @@
 
 			<div v-show="tab_achive" id="achieve" class="achieve">
 				<h1>Items</h1>
-				<div class="row">
-					<div class="item_ach blue">
-						<h3>Nitro</h3>
-						<p>Greatly increases the speed of your car for one race. <br> To get, you need to win three times in a row. You will also receive nitro for every three win in a row</p>
-						<p class="res">You currently have: <span class="value">{{nitro}}</span> Nitro</p>
-					</div>
-					<div class="item_ach red">
-						<h3>Energy</h3>
-						<p>Increases the speed of your car for one race. <br> To receive, you need to get your first victory. You will also receive energy for every 5 wins</p>
-						<p class="res">You currently have: <span class="value">{{energy}}</span> Energy</p>
-					</div>					
+				<div class="row">							
+					<div class="car">
+						<div class="visual_wrap">
+							<img src="img/nitro.png" alt="">
+						</div>					
+						<h2>Nitro</h2>					
+						<div class="stats_car">
+							<p>Greatly increases the speed of your car for one race. <br> To get, you need to win three times in a row. You will also receive nitro for every three win in a row</p>
+						</div>
+						<div class="counter">
+							You currently have: <span class="value">{{nitro}}</span>
+						</div>						
+					</div>	
+					<div class="car">
+						<div class="visual_wrap">
+							<img src="img/energy.png" alt="">
+						</div>					
+						<h2>Energy</h2>					
+						<div class="stats_car">
+							<p>
+								Increases the speed of your car for one race. <br> To receive, you need to get your first victory. You will also receive energy for every 5 wins
+							</p>							
+						</div>
+						<div class="counter">
+							You currently have: <span class="value">{{energy}}</span>
+						</div>						
+					</div>						
 				</div>
 			</div>
 
@@ -310,6 +326,79 @@
 					v-bind:bool="car.bool"										
 				></my-cars-popup>
 			</div>		
+		</div>
+
+		<a href="#adds" class="popup adds_fake"></a>
+
+		<div id="adds" class="mfp-fade mfp-hide">		
+			<h1>Pick track for race!</h1>
+			<div class="row trace">
+				<div class="car">
+					<div class="visual_wrap">
+						<img src="img/track_1.jpeg" alt="">
+					</div>					
+					<h2>Track 1</h2>					
+					<div class="stats_car">
+						<span class="speed">length: <span class="value">20</span> km</span>				
+						<span class="lucky">turns: <span class="value">20</span></span>
+					</div>		
+					<button trace-id="0" class="pick">Pick</button>				
+				</div>	
+				<div class="car">
+					<div class="visual_wrap">
+						<img src="img/track_2.png" alt="">
+					</div>					
+					<h2>Track 2</h2>					
+					<div class="stats_car">
+						<span class="speed">length: <span class="value">100</span> km</span>				
+						<span class="lucky">turns: <span class="value">5</span></span>
+					</div>						
+					<button trace-id="1" class="pick">Pick</button>
+				</div>	
+				<div class="car">
+					<div class="visual_wrap">
+						<img src="img/track_3.jpg" alt="">
+					</div>					
+					<h2>Track 3</h2>					
+					<div class="stats_car">
+						<span class="speed">length: <span class="value">50</span> km</span>				
+						<span class="lucky">turns: <span class="value">20</span></span>
+					</div>						
+					<button trace-id="2" class="pick">Pick</button>
+				</div>					
+			</div>		
+			<h1>Pick items for race!</h1>
+			<div class="row items_adds">
+				<div class="car">
+					<div class="visual_wrap">
+						<img src="img/nitro.png" alt="">
+					</div>					
+					<h2>Nitro</h2>					
+					<div class="stats_car">
+						<p>Greatly increases the speed of your car for one race.</p>
+					</div>
+					<div class="counter">
+						You currently have: <span class="value">{{nitro}}</span>
+					</div>						
+					<button item-id="nitro" class="pick nitro_btn">Pick</button>
+				</div>	
+				<div class="car">
+					<div class="visual_wrap">
+						<img src="img/energy.png" alt="">
+					</div>					
+					<h2>Energy</h2>					
+					<div class="stats_car">
+						<p>
+							Increases the speed of your car for one race.
+						</p>							
+					</div>
+					<div class="counter">
+						You currently have: <span class="value">{{energy}}</span>
+					</div>						
+					<button item-id="energy" class="pick enrg_btn">Pick</button>
+				</div>				
+			</div>		
+			<div v-on:click="vm.go_race()" class="send">Go to race!</div>
 		</div>
 
 		<div id="faq" class="mfp-fade mfp-hide">
