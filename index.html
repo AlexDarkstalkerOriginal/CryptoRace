@@ -21,6 +21,7 @@
 				<h3>User info</h3>
 				<span class="lvl"> <span class="value">{{user_lvl}}</span> lvl</span>
 				<div class="exp">exp: <span class="value">{{user_current}}/{{user_exp}}</span></div>
+				<a v-on:click="vm.user_page()" href="#">history</a>
 			</div>
 
 			<nav>				
@@ -35,7 +36,7 @@
 			</nav>
 			
 			<div class="logo">
-				<a href="#adds" class="popup"><img src="img/logo.png" alt="" class=""></a>
+				<img src="img/logo.png" alt="" class="">
 			</div>
 
 			<div v-show="no_cars" class="no_cars">
@@ -208,47 +209,20 @@
 				</div>				
 			</div>
 			
-			<div v-show="tab_player" id="player">
-				<div class="player_info">
-					<span class="name">Nilko</span><img src="img/edit.png" alt="" class="edit">
-					<span class="exp">exp <span class="current">20</span>/<span class="full">100</span></span>
-					<span class="lvl"><span class="value">1</span> lvl</span>
-					<span class="adress">owner: <span class="value">n1JNiQyqSq96kjfAafRao393YW84dFvCR9m</span></span>
-				</div>
+			<div v-show="tab_player" id="player">				
 				<div class="player_history">
 					<h2>History</h2>							
 					<ul class="data_history">
 						<li>
-							<span class="opponent">Opponent</span>
+							<span class="opponent">Attacker</span>
+							<span class="opponent">Defender</span>
 							<span class="result">Result</span>
 							<span class="info">Info</span>
 						</li>						
-						<div class="wrapp_history">									
-							<li>
-								<span class="opponent"><img src="img/volvo.png" alt=""></span>
-								<span class="result win">Win</span>
-								<span class="info"><a href="#"><img src="img/more_info.png" alt="" class="more_info"></a></span>
-							</li>
-							<li>
-								<span class="opponent"><img src="img/volvo.png" alt=""></span>
-								<span class="result loose">Loose</span>
-								<span class="info"><a href="#"><img src="img/more_info.png" alt="" class="more_info"></a></span>
-							</li>
-							<li>
-								<span class="opponent"><img src="img/volvo.png" alt=""></span>
-								<span class="result draw">Draw</span>
-								<span class="info"><a href="#"><img src="img/more_info.png" alt="" class="more_info"></a></span>
-							</li>
+						<div class="wrapp_history">															
 						</div>										
 					</ul>
-				</div>				
-				<h1 class="cars_h1">Player cars</h1>
-				<div class="player_cars row">					
-					<car-player 				
-						v-for="car in cars_race"				  						
-						v-bind:id="car.id"			  				
-					></car-player>		
-				</div>
+				</div>								
 			</div>
 
 			<div v-show="tab_ranked" id="ranked">

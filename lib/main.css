@@ -245,7 +245,7 @@ nav li:last-child {
 
   .data_history {
     width: 100%;
-    margin-left: 75px;
+    margin-left: 275px;
     margin-top: 20px;
   }
 
@@ -262,7 +262,7 @@ nav li:last-child {
   .data_history span {
     display: inline-block;
     vertical-align: middle;
-    width: 32%;
+    width: 24%;
     margin: unset;
     text-align: center;
   }
@@ -301,6 +301,7 @@ nav li:last-child {
     font-size: 14px;
     margin-bottom: 40px;
     text-align: center;
+    cursor: pointer;    
   }
 /* вкладка машины */
 
@@ -428,7 +429,12 @@ nav li:last-child {
     margin: 10px auto 0 auto;
     overflow: hidden;
     font-size: 14px;
-    text-align: center;
+    text-align: center;    
+  }
+
+  .car .owner .value {
+    color: #f9e58e;
+    /*cursor: pointer;*/
   }
 
   .car {
@@ -556,14 +562,10 @@ nav li:last-child {
     width: 350px;
     position: relative;
     padding: 20px;
-    margin-top: 40px;
+    margin-top: 40px;    
   }
   .player_info .adress, .player_info .exp {
     font-size: 14px;
-  }
-
-  #player {
-    padding-left: 100px;
   }
 
   .player_info .value {
@@ -610,6 +612,7 @@ nav li:last-child {
   .player_history h2 {
     text-align: center;
     margin-left: 75px;
+    margin-left: 525px;
   }
   #player_info .data_history {
     width: unset;
@@ -836,9 +839,8 @@ nav li:last-child {
     top: 0;
     left: -135px;
     padding: 10px 20px;
-    border-radius: 2px;
-  }    
-
+    border-radius: 2px;    
+  }      
   .user_info .value {
     color: #f9e58e;
     font-size: 20px; 
@@ -852,6 +854,13 @@ nav li:last-child {
   .user_info .lvl {
     margin-bottom: 5px;
     display: block;
+  }
+
+  .user_info a {
+    text-decoration: none;
+    color: #13b537;
+    font-size: 16px;
+    border-bottom: 1px solid;
   }
 /*user info*/
 
